@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --standart-gray: #CCCCCC;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+h1#title-page {
+    text-align: center;
+
+    margin-top: 35px;
+}
+
+body {
+    background-color: var(--standart-gray);
+}
+
+main#main {
+    width: calc(100% - 200px);
+    height: 500px;
+    
+    margin: 35px auto;
+
+    background-color: var(--standart-gray);
+
+    padding: 25px;
+
+    filter: brightness(110%);
+
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+div.area-calc, main#main {
+    display: flex;
+    align-items: center;
+}
+
+div.area-calc {
+    justify-content: center;
+}
+
+h5.title-main {
+    text-align: center;
+}
+
+.text-calc {
+    font-size: 100px;
+}
+
+div.area-calc > input[type="text"] {
+    width: 150px;
+    height: 115px;
+
+    margin: 0 40px;
+}
+
+span.text-calc {
+    margin: 0 20px;
+}
+
+input[type="text"] {
+    border: none;
+    
+    background-color: transparent;
+
+    font-size: 40px;
+
+    transition: all 2s;
+    
+    padding: 20px;
+}
+
+input[type="text"]:hover {
+    background-color: var(--white);
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: none;
+
+    background-color: var(--white);
+}
+
+input[type="text"]::placeholder {
+    text-align: center;
+}
+
+button.button-calc {
+    width: 200px;
+    height: 100px;
+
+    font-size: 35px;
+
+    border: none;
+
+    transition: all 2s;
+}
+
+button.button-calc:hover {
+    filter: brightness(0.90)
+}
+
+/* Adaptações */
